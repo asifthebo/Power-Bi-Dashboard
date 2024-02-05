@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO Supported Nutrition Stabilization Centers Sindh</title>
+
+    <!-- Include the Power BI JavaScript library -->
+    <script src="https://app.powerbi.com/scripts/reportembed.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #3498db; /* Blue color */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .report-container {
+            margin: 20px auto;
+            max-width: 1280px; /* Adjust the max-width according to your needs */
+        }
+
+        iframe {
+            width: 1280px;
+            height: 720px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> WHO Supported Nutrition Stabilization Centers Sindh </h1>
+
+    <!-- Replace the values in the embedConfig with your actual Power BI report details -->
+    <div class="report-container">
+        <iframe src="https://app.powerbi.com/reportEmbed?reportId=6b2a4646-a226-43ea-a1f3-cb1a23bd6b15&autoAuth=true&ctid=1374e030-dcda-42c6-bd74-560195be7bfa" frameborder="0" allowFullScreen="true" allowtransparency="true"></iframe>
+    </div>
+
+    <script>
+        // No need to replace these values as they are specific to your Power BI report
+        var embedConfig = {
+            type: 'report',
+            tokenType: models.TokenType.Embed,
+            accessToken: '',
+            embedUrl: '',
+            id: '',
+            settings: {
+                filterPaneEnabled: false,
+                navContentPaneEnabled: false
+            }
+        };
+
+        var reportContainer = document.querySelector(".report-container");
+        var report = powerbi.embed(reportContainer, embedConfig);
+
+    </script>
+
+</body>
+</html>
